@@ -1,0 +1,22 @@
+
+
+## 这是 https://generativelanguage.googleapis.com/v1beta/models 的代理
+POST https://gemini.829525.xyz/
+Content-Type: application/json
+
+{
+  "model": "models/gemini-2.5-flash",
+  "input": {
+    "content": [
+      {
+        "type": "input_text",
+        "text": "What is Gemini?"
+      }
+    ]
+  }
+}
+
+
+curl -v -X POST https://gemini.829525.xyz/v1beta/models \
+  -H "Content-Type: application/json" \
+  -d '{"model":"models/gemini-2.5-flash","input":{"content":[{"type":"input_text","text":"Hello"}]}}'
